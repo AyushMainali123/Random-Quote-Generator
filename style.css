@@ -1,0 +1,64 @@
+*, *::before, *::ater{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    min-height: 90vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #add8e6;
+}
+
+.container{
+    display: grid;
+    justify-items: center;
+}
+.container p{ 
+    text-shadow: 1px 1px 2px rgba(54, 53, 53, 0.87);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.container p .quote{
+    font-size: 2rem;
+    color: #272727;
+    font-weight: 800;
+}
+.container p .quote::before, .container p .quote::after{
+    content: '"';
+}
+.container p .author{
+    font-weight: 500;
+    font-style: italic;
+    font-size: 1.3rem;
+    color: rgb(54, 49, 49);
+}
+.container p .author::before{
+    content: '-  ';
+    font-weight: lighter;
+    text-decoration: line-through;
+    padding-right: 5px;
+}
+
+button{
+    padding: 10px;
+    font-size: 1rem;
+    color: #272727;
+    background-color: lightgreen;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px 2px #272727, 
+    inset 0px 0px 3px 2px #6e6c6c;
+    font-weight: 1000;
+    text-transform: capitalize;
+    transition: 800ms;
+}
+button:hover{
+    background-color: #27272786;
+    color: lightgreen;
+
+}
